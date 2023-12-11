@@ -1,0 +1,49 @@
+<!-- <mat-toolbar>
+  <span> <a routerLink="/"> Todo Maker </a></span>
+  <span class="spacer"></span>
+  <div>
+    <a routerLink="/users"> Users </a>
+  </div>
+</mat-toolbar> -->
+
+<mat-toolbar>
+  <div class="container d-flex">
+    <span>
+      <a routerLink="/" style="cursor: pointer">Todo Maker </a>
+    </span>
+
+    <span class="spacer"></span>
+    <div
+      class="d-flex justify-content-around icons"
+      style="width: 100px"
+      *ngIf="!showMenu"
+    >
+      <div class="d-flex align-items-center mr-5 px-4">
+        <span>
+          <a routerLink="/login">Login</a>
+        </span>
+        <mat-icon routerLink="/login">login</mat-icon>
+      </div>
+
+      |
+      <div class="d-flex align-items-center ml-5 px-4">
+        <span>
+          <a routerLink="/register">Register</a>
+        </span>
+        <mat-icon routerLink="/register">how_to_reg</mat-icon>
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-around icons"
+      style="width: 100px"
+      *ngIf="showMenu"
+    >
+      <div class="d-flex align-items-center ml-5 px-4">
+        <span>
+          <h3 routerLink="/register">Welcome, SARAH</h3>
+        </span>
+        <mat-icon routerLink="/register">logout</mat-icon>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

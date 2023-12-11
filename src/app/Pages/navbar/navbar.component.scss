@@ -1,0 +1,13 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  text-decoration: none;
+  color: #fff;
+  // padding-right: 0.3rem;
+  /* font-family: "Play", sans-serif; */
+}
+mat-toolbar a, h3 {
+  padding-right: 0.3rem;
+}
